@@ -1,7 +1,7 @@
 {% extends 'layouts/base.html' %}
 {% load formats file_extension info_value %}
 
-{% block title %} Tables {% endblock title %}
+{% block title %} Tabuľky {% endblock title %}
 
 {% block extrastyle %}
 <!-- Specific CSS goes HERE -->
@@ -32,20 +32,20 @@
           <div class="card mb-4">
             <div class="card-header pb-0">
               <h6>
-                Async Tasks Manager
+                Správca asynchrónnych úloh
               </h6>
             </div>
             <div class="card-body px-0 pt-0 pb-2 px-4 mt-3">
               
               {% if scripts %}
                 <p>
-                  Superusers are able to create/cancel tasks.
+                  Superpoužívatelia môžu vytvárať/rušiť úlohy.
                   <br />
-                  Ordinary users can only view execution logs and running tasks (no other interactions allowed).
+                  Bežní používatelia môžu iba prezerať protokoly vykonávania a spustené úlohy (žiadne iné interakcie nie sú povolené).
                 </p>
               {% else %}
                 <p class="text-danger">
-                  No scripts detected - Please update the configuration (CELERY_SCRIPTS_DIR, CELERY_LOGS_DIR)
+                  Neboli zistené žiadne skripty - Aktualizujte konfiguráciu (CELERY_SCRIPTS_DIR, CELERY_LOGS_DIR)
                 </p>
               {% endif %}
             
@@ -59,24 +59,24 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h6>Tasks List</h6>
+              <h6>Zoznam úloh</h6>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7">Name</th>
-                      <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">Script</th>
-                      <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder opacity-7">STATE</th>
+                      <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7">Názov</th>
+                      <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">Skript</th>
+                      <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder opacity-7">STAV</th>
                       <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder opacity-7">
-                        Script
+                        Skript
                       </th>
                       <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder opacity-7">
-                        ARGS
+                        ARGUMENTY
                       </th>                   
                       {% if request.user.is_authenticated %}
-                      <th class="text-center text-dark opacity-7">Action</th>
+                      <th class="text-center text-dark opacity-7">Akcia</th>
                       {% endif %}
                     </tr>
                   </thead>
@@ -104,7 +104,7 @@
                                 {{task.name}}
                               </h6>
                               <p class="text-xs text-dark mb-0">
-                                Celery Task
+                                Celery úloha
                               </p>
                             </div>
                           </div>
@@ -269,7 +269,7 @@
                         </td>   
                         <td class="">
                           <p class="text-sm text-center mb-0">
-                            <a data-bs-toggle="modal" data-bs-target="#view-log-{{result.id}}" href="#">View LOG</a> 
+                            <a data-bs-toggle="modal" data-bs-target="#view-log-{{result.id}}" href="#">Zobraziť LOG</a> 
                           </p>
                         </td>                                               
 
@@ -324,7 +324,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h6 class="modal-title mx-auto" id="modal-title-default">
-              Task LOG
+              LOG úlohy
             </h6>
           </div>
           <div class="modal-body">
@@ -332,7 +332,7 @@
             </p>
           </div>
           <div class="modal-footer text-center">
-            <button type="button" class="btn btn-link mx-auto" data-bs-dismiss="modal">Dismiss</button>
+            <button type="button" class="btn btn-link mx-auto" data-bs-dismiss="modal">Zatvoriť</button>
           </div>
         </div>
       </div>

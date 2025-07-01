@@ -5,7 +5,7 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href=" {% url "index" %} ">
-        <img src="{% static "assets/img/logo-ct-dark.png" %}" class="navbar-brand-img h-100" alt="main_logo">
+        <img src="https://www.verteco.digital/wp-content/uploads/2022/05/verteco-logo.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">VERTECO</span>
       </a>
     </div>
@@ -16,7 +16,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link {% if parent == 'dashboard' %}active{% endif %}" aria-controls="dashboardsExamples" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-compass-04" aria-hidden="true"></i>
+              <i class="ni ni-compass-04" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
@@ -149,6 +149,7 @@
 
         {% if not request.user.is_authenticated %}
         
+        <!-- Authentication section commented out as requested
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#authExamples" class="nav-link " aria-controls="authExamples" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
@@ -229,6 +230,7 @@
             </ul>
           </div>
         </li>
+        -->
 
         {% endif %}
 
@@ -298,7 +300,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#accountExample" class="nav-link {% if parent == 'accounts' %}active{% endif %}" aria-controls="accountExample" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-circle-08" aria-hidden="true"></i>
+              <i class="ni ni-circle-08" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Účet</span>
           </a>
@@ -481,7 +483,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#projectsExample" class="nav-link {% if parent == 'projects' %}active{% endif %}" aria-controls="projectsExample" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-delivery-fast" aria-hidden="true"></i>
+              <i class="ni ni-delivery-fast" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Projekty</span>
           </a>
@@ -511,7 +513,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#usersExample" class="nav-link {% if parent == 'team' %}active{% endif %}" aria-controls="usersExample" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-archive-2" aria-hidden="true"></i>
+              <i class="ni ni-archive-2" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Tím</span>
           </a>
