@@ -16,7 +16,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link {% if parent == 'dashboard' %}active{% endif %}" aria-controls="dashboardsExamples" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-compass-04" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-tachometer-alt" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
@@ -81,7 +81,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#apps-dropdown" class="nav-link {% if 'apps' in parent %}active{% endif %}" aria-controls="apps-dropdown" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-app" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-cubes" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Aplikácie</span>
           </a>
@@ -228,7 +228,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link {% if parent == 'pages' %}active{% endif %}" aria-controls="pagesExamples" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-book-bookmark" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-file-alt" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Stránky</span>
           </a>
@@ -276,7 +276,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#accountExample" class="nav-link {% if parent == 'accounts' %}active{% endif %}" aria-controls="accountExample" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-circle-08" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-user" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Účet</span>
           </a>
@@ -312,7 +312,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#applicationsExamples" class="nav-link {% if parent == 'applications' %}active {% endif %}" aria-controls="applicationsExamples" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-settings" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-tools" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Aplikácie</span>
           </a>
@@ -354,7 +354,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#ecommerceExamples" class="nav-link {% if parent == 'ecommerce' %}active{% endif %}" aria-controls="ecommerceExamples" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-cart" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-shopping-cart" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">E-shop</span>
           </a>
@@ -362,7 +362,7 @@
             <ul class="nav ms-4 ps-3">
               <li class="nav-item {% if segment == 'overview' %}active{% endif %}">
                 <a class="nav-link {% if segment == 'overview' %}active{% endif %}" href="{% url "overview" %}">
-                  <span class="sidenav-mini-icon"> O </span>
+                  <i class="fas fa-eye sidenav-mini-icon" aria-hidden="true"></i>
                   <span class="sidenav-normal"> Prehľad </span>
                 </a>
               </li>
@@ -409,13 +409,13 @@
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
                       <a class="nav-link {% if segment == 'order_list' %}active{% endif %}" href="{% url "order_list" %}">
-                        <span class="sidenav-mini-icon text-xs"> O </span>
+                        <i class="fas fa-list sidenav-mini-icon text-xs" aria-hidden="true"></i>
                         <span class="sidenav-normal"> Zoznam objednávok </span>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link {% if segment == 'order_details' %}active{% endif %}" href="{% url "order_details" %}">
-                        <span class="sidenav-mini-icon text-xs"> O </span>
+                        <i class="fas fa-info-circle sidenav-mini-icon text-xs" aria-hidden="true"></i>
                         <span class="sidenav-normal"> Detaily objednávky </span>
                       </a>
                     </li>
