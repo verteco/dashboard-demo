@@ -424,7 +424,7 @@
               </li>
               <li class="nav-item {% if segment == 'referral' %}active{% endif %}">
                 <a class="nav-link {% if segment == 'referral' %}active{% endif %}" href="{% url "referral" %}">
-                  <span class="sidenav-mini-icon"> R </span>
+                  <i class="fas fa-share-alt sidenav-mini-icon" aria-hidden="true"></i>
                   <span class="sidenav-normal"> Odporúčanie </span>
                 </a>
               </li>
@@ -434,7 +434,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#projectsExample" class="nav-link {% if parent == 'projects' %}active{% endif %}" aria-controls="projectsExample" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-delivery-fast" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-project-diagram" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Projekty</span>
           </a>
@@ -442,19 +442,19 @@
             <ul class="nav ms-4 ps-3">
               <li class="nav-item {% if segment == 'general' %}active{% endif %}">
                 <a class="nav-link {% if segment == 'general' %}active{% endif %}" href="{% url "general" %}">
-                  <span class="sidenav-mini-icon"> G </span>
+                  <i class="fas fa-cog sidenav-mini-icon" aria-hidden="true"></i>
                   <span class="sidenav-normal"> Všeobecné </span>
                 </a>
               </li>
               <li class="nav-item {% if segment == 'new_project' %}active{% endif %}">
                 <a class="nav-link {% if segment == 'new_project' %}active{% endif %}" href="{% url "new_project" %}">
-                  <span class="sidenav-mini-icon"> N </span>
+                  <i class="fas fa-plus-circle sidenav-mini-icon" aria-hidden="true"></i>
                   <span class="sidenav-normal"> Nový projekt </span>
                 </a>
               </li>
               <li class="nav-item {% if segment == 'timeline' %}active{% endif %}">
                 <a class="nav-link {% if segment == 'timeline' %}active{% endif %}" href="{% url "timeline" %}">
-                  <span class="sidenav-mini-icon"> T </span>
+                  <i class="fas fa-clock sidenav-mini-icon" aria-hidden="true"></i>
                   <span class="sidenav-normal"> Časová os </span>
                 </a>
               </li>
@@ -464,7 +464,7 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#usersExample" class="nav-link {% if parent == 'team' %}active{% endif %}" aria-controls="usersExample" role="button" aria-expanded="false">
             <div class="icon icon-sm shadow-sm border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
-              <i class="ni ni-archive-2" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
+              <i class="fas fa-users" aria-hidden="true" style="font-size: 12px; color: #344767;"></i>
             </div>
             <span class="nav-link-text ms-1">Tím</span>
           </a>
@@ -472,7 +472,7 @@
             <ul class="nav ms-4 ps-3">
               <li class="nav-item {% if segment == 'team_projects' %}active{% endif %}">
                 <a class="nav-link {% if segment == 'team_projects' %}active{% endif %}" href="{% url "team_projects" %}">
-                  <span class="sidenav-mini-icon"> A </span>
+                  <i class="fas fa-tasks sidenav-mini-icon" aria-hidden="true"></i>
                   <span class="sidenav-normal"> Všetky projekty </span>
                 </a>
               </li>
