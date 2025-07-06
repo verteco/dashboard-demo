@@ -125,7 +125,7 @@
               {% endif %}
               <li class="nav-item {% if 'tasks' in segment %}active{% endif %}">
                 <a class="nav-link {% if 'tasks' in segment %}active{% endif %}" href="{% url 'tasks' %}">
-                  <span class="sidenav-mini-icon"> T </span>
+                  <i class="fas fa-tasks sidenav-mini-icon" aria-hidden="true"></i>
                   <span class="sidenav-normal"> Úlohy </span>
                 </a>
               </li>        
@@ -703,7 +703,7 @@
         <div class="full-background" style="background-image: url('/static/assets/img/curved-images/white-curved.jpg')"></div>
         <div class="card-body text-start p-3 w-100">
           <div class="icon icon-shape icon-sm bg-white shadow text-center mb-3 d-flex align-items-center justify-content-center border-radius-md">
-            <i class="ni ni-diamond text-dark text-gradient text-lg top-0" aria-hidden="true" id="sidenavCardIcon"></i>
+            <i class="fas fa-book text-dark text-gradient text-lg top-0" aria-hidden="true" id="sidenavCardIcon"></i>
           </div>
           <div class="docs-info">
             <h6 class="text-white up mb-0">Potrebujete pomoc?</h6>
